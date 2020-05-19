@@ -1,0 +1,71 @@
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('../fonts/omnes/omnes-regular-webfont.ttf?vbcjhb') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('../fonts/omnes/omnes-semibold-webfont.ttf?vbcjhb') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: block;
+}
+
+body {
+    background: #00D6C2;
+    /*background: linear-gradient(to right, #00D6C2, #c8ead7, #00D6C2);*/
+    min-height: 100vh;
+    font-family: Omnes, 'Helvetica', sans-serif;
+}
+
+.card-signin {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.card-signin .card-body {
+    padding: 2rem;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+    .form-label-group > label {
+        display: none;
+    }
+
+    .form-label-group input::-ms-input-placeholder {
+        color: #777;
+    }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .form-label-group > label {
+        display: none;
+    }
+
+    .form-label-group input:-ms-input-placeholder {
+        color: #777;
+    }
+}
